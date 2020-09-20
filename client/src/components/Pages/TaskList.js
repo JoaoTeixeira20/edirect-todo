@@ -69,7 +69,7 @@ const TaskList = ({projectID}) => {
       {completeTasks.map(task => {
         return (
           <div key={task.taskID} className="taskItem">
-            <input type="checkbox" defaultChecked={task.checked}/>
+            <input type="checkbox" readOnly={true} checked={task.checked}/>
             <div>{task.description}</div>
             <span className="taskDate">{task.finishDate}</span>
           </div>
