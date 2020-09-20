@@ -92,7 +92,7 @@ body {
   margin: 20px;
   display:flex; 
   flex-direction:column;
-  width:350px;
+  width: 320px;
   align-items:center;
   padding:10px;
   border-radius: 5px;
