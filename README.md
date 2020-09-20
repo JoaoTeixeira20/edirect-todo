@@ -12,10 +12,10 @@ Front-end was made with react with create-react-app boilerplate
 
 this package comes with an .env.example to configure the server
 
-DB_URI= connection string to the mongodb database
-HOST= host ip of the connection (0.0.0.0) to serve on the network
-PORT= host port
-TOKEN_SECRET= secret string combination to encrypt the authentication tokens
+  - DB_URI= connection string to the mongodb database
+  - HOST= host ip of the connection (0.0.0.0) to serve on the network
+  - PORT= host port
+  - TOKEN_SECRET= secret string combination to encrypt the authentication tokens
 
 this application is prepared to get the static content of the react-app on a folder named 'build'
 
