@@ -39,7 +39,7 @@ const SignUp = () => {
   }
 
   return ( 
-      <div className="userFormContainer">
+      <div className="userFormContainer gradientDecorator">
           <div className="projectTitle">Register</div>
           <input type="text" name="name" placeholder="name" value={loginCredentials.name} onChange={onChangeHandler}></input>
           <input type="text" name="username" placeholder="username" value={loginCredentials.username} onChange={onChangeHandler}></input>

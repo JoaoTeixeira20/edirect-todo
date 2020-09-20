@@ -10,8 +10,8 @@ const Home = () => {
 
   if (!AuthData.username){
     return (
-      <div className="homeContent">
-      <div>Hello guest, please login or register on our app</div>
+      <div className="homeContent gradientDecorator">
+      <div className="projectTitle">Hello guest, please login or register on our app</div>
       <Link to="/login"><div className="buttonStyle">Login</div></Link>
       <Link to="/signup"><div className="buttonStyle">Register</div></Link>
       </div>

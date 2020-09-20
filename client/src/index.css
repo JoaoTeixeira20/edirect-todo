@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color:lightblue;
+  background-color:#ADC1CC;
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -13,18 +13,18 @@ body {
 } */
 
 .gradientDecorator{
-  background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(164,170,169,1) 0%, rgba(203,205,214,1) 50%, rgba(255,255,255,0.6082808123249299) 100%);
+  background: linear-gradient(to bottom, rgba(242,246,248,1) 0%,rgba(216,225,231,1) 31%,rgba(181,198,208,1) 59%,rgba(224,239,249,1) 100%);
 }
 
 .homeContent{
-  background-color: darkgrey;
   align-items: center;
   margin: 10px;
   display: flex;
   flex-direction: column;
-  box-shadow: 10px 10px 18px 2px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.75);
   border-radius: 5px;
   border:1px solid #cbcdd6;
+  max-width: 320px;
 }
 
 .homeContent > *{
@@ -33,7 +33,7 @@ body {
 
 .homeContent > *:nth-child(1){
   font-size: x-large;
-  font-weight: bold;
+  text-align: center;
 }
 
 .pageHeader{
@@ -67,7 +67,7 @@ body {
   border:1px solid black;
   margin:10px;
   width:320px;
-  background-color: #cbcdd6;
+  background-color: #B5C6D0;
 }
 
 .projectTitle{
@@ -97,7 +97,7 @@ body {
   padding:10px;
   border-radius: 5px;
   box-shadow: 10px 10px 18px 2px rgba(0,0,0,0.75);
-  border:1px solid #cbcdd6;
+  
 }
 
 .userFormContainer > * {
@@ -136,11 +136,11 @@ body {
 }
 
 .taskItem:nth-child(even) {
-  background: #B8B8B8
+  background: #9ABBCE
 }
 
 .taskItem:nth-child(odd) {
-  background: #DCDCDC
+  background: #ADC1CC
 }
 
 .taskItem > *:nth-child(2){

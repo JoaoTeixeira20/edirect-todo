@@ -43,7 +43,7 @@ export default function Login(){
   }
   
   return(
-    <div className="userFormContainer">
+    <div className="userFormContainer gradientDecorator">
         <div className="projectTitle">Login</div>
         <input type="text" name="username" placeholder="username" value={loginCredentials.username} onChange={onChangeHandler}></input>
         <input type="password" name="password" placeholder="password" value={loginCredentials.password} onChange={onChangeHandler}></input>
