@@ -16,4 +16,4 @@ Runs the tests
 
 ### 'yarn prodwin' or 'npm prodwin'
 
-Runs the server in production mode
+Runs the server in production mode on windows
