@@ -10,24 +10,6 @@ import NotFound from './components/Pages/NotFound';
 import Home from './components/Pages/Home';
 import ErrorBoundaries from './ErrorBoundaries';
 
-
-
-// function CountComponent() {
-//   const count = useSelector(getCount)
-//   return <p>Count: {count}</p>
-// }
-
-// function ButtonComponent() {
-//   const dispatch = useDispatch()
-
-//   return (
-//     <>
-//       <button onClick={() => dispatch(counterSlice.actions.increment())}>+</button>
-//       <button onClick={() => dispatch(counterSlice.actions.decrement())}>-</button>
-//     </>
-//   )
-// }
-
 function App() {
   return (
     <div className="pageContent">

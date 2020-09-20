@@ -12,19 +12,6 @@ const tasksSchema = new Schema({
     timestamps:true
 })
 
-//condition to hash a password when inserted to database
-// tasksSchema.pre('update', async function(next) {
-//     // Check if document is new or a new password has been set
-//     const document = this;
-//     //saves the current time when finish_state is triggered to true and there's no finish_date
-//     if (document.finish_state === true && !document.finish_date) {
-//       document.finish_date = Date.now()
-//       next();
-//     }else{
-//       next()
-//     }
-//   });
-
 const Task = mongoose.model('Tasks',tasksSchema);
 
 module.exports = Task

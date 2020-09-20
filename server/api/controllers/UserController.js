@@ -17,7 +17,6 @@ const usersMapper = user => {return{name:user.name, username:user.username}}
 User.find()
   .exec()
   .then(users => res.json(users.map(usersMapper)))
-  //.then(users => res.json(users.map(user => {return {username:user.username}})))
   .catch(_ => res.status(400).json({status:'problem fetching users'}));
 }
 
@@ -33,6 +32,7 @@ exports.loginUser = (req,res) => {
         const AuthenticationStatus = await user.isCorrectPassword(password)
         if (AuthenticationStatus){
           const loginToken = authenticator.generateAccessToken(user._id)
+          //my attempt to use cookies to store the authorization header, cross-origin is strict.. :/
           //res.cookie('BearerToken', loginToken, {httponly: true, secure: false, sameSite: true, expires: new Date(Date.now() + 900000)})
           //res.cookie('username', username, {httponly: true, secure: false, sameSite: true, expires: new Date(Date.now() + 900000)})
           //res.header('BearerToken', loginToken)
@@ -47,6 +47,7 @@ exports.loginUser = (req,res) => {
     })
 }
 
+//deprecated
 exports.logoutUser = (_,res) => {
   try{
     res.cookie('BearerToken', "", {httponly: true, expires: new Date(Date.now())})

@@ -18,6 +18,7 @@ const AuthContextProvider = (props) => {
     setAuthorizationData(null,null)
   }
 
+  //triggers to update the localstorage with user credentials
   React.useEffect(() => {
     AuthData.token ? localStorage.setItem("Token", AuthData.token) : localStorage.removeItem("Token")
     AuthData.username ? localStorage.setItem("username", AuthData.username) : localStorage.removeItem("username")

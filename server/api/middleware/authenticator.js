@@ -1,6 +1,5 @@
 const jwt = require("jsonwebtoken");
 
-//authentication middleware for user identification
 exports.authenticateToken = (req, res, next) => {
     try {
       const token = req.headers.authorization.split(" ")[1];
@@ -8,6 +7,7 @@ exports.authenticateToken = (req, res, next) => {
       if (!token || !decodedToken){
         throw 'Invalid token auth';
       } else {
+        //this will allow to identify the user on each request that are authenticated
         req.body.userID = decodedToken.userID
         next();
       }

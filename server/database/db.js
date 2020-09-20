@@ -4,6 +4,7 @@ const database_uri = process.env.DB_URI
 
 mongoose.Promise = global.Promise;
 
+//this setup will determine if its to use a normal database or create a mock one
 if (process.env.NODE_ENV === 'test'){
   const Mockgoose = require('mockgoose').Mockgoose;
   const mockgoose = new Mockgoose(mongoose)
